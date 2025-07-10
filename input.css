@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'ScribdJa';
+        font-weight: 300;
+        src: url('https://cdn.bfldr.com/43GZTIKI/at/tnpjghqzptnt6g6jtfhfmmc/Scribd-JaSN-Light.woff2');
+      }
+    @font-face {
+        font-family: 'ScribdJa';
+        font-weight: 400;
+        src: url('https://cdn.bfldr.com/43GZTIKI/at/xwgkjjhg3tszs64k8m5xfb6s/Scribd-JaSN-Regular.woff2');
+      }
+    body {
+      font-family: 'ScribdJa';
+      font-display: swap;
+      src: url('https://cdn.bfldr.com/43GZTIKI/at/xwgkjjhg3tszs64k8m5xfb6s/Scribd-JaSN-Regular.woff2');
+    }
+    p {
+        font-weight: 300;
+        @apply sm:text-justify tracking-wide
+      }
+    a {
+        @apply underline
+      }
+    ul {
+        @apply list-disc ml-5 sm:ml-8 my-3
+      }
+    ol {
+        @apply list-decimal ml-5 sm:ml-8 my-3
+      }
+    button {
+        text-transform: capitalize;
+        font-weight: 300;
+        @apply text-sm tracking-wider        
+    }
+    
+  }
